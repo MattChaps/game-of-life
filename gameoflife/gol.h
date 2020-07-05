@@ -1,3 +1,6 @@
+#ifndef GOL_H
+#define GOL_H
+
 struct universe {
 	int cells;
 	int chars;
@@ -19,3 +22,4 @@ void evolve(struct universe *u, int (*rule)(struct universe *u, int column, int 
 void print_statistics(struct universe *u);
 /*You can modify after this line again*/
 
+#endif
